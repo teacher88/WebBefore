@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제어문</title>
+    <script>
+        // 조건문
+        var num=20
+        if(num > 20){
+            document.write("<h3> 20보다 큰 수 입니다. </h3>");
+        }
+
+        if(num > 0){
+            document.write("<h3> 양수입니다. </h3>");
+        }else{
+            document.write("<h3> 음수입니다. </h3>");
+        }
+
+        var kor=70
+        var eng=80
+        var mat=90
+        var tot=kor+eng+mat
+        var avg=tot/3
+
+        if(avg >=90){
+            document.write("<h3> A학점입니다. </h3>");
+        }else if(avg >=80){
+            document.write("<h3> B학점입니다. </h3>");
+        }else if(avg >=70){
+            document.write("<h3> C학점입니다. </h3>");
+        }else if(avg < 60){
+            document.write("<h3> F학점입니다. </h3>");
+        }
+        
+        // 반복문
+        for(var i=0;i<10;i++){
+            document.write("반복문입니다. <br/>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>가상클래스선택자- 문자 블록 </title>
+	<style type="text/css">	
+		#content{
+			width:300px;
+		}
+		
+		#content > li{
+			list-style-type: none;
+			border: 1px solid #cccccc;
+			padding: 10px;
+			background-color: #efefef;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		
+		#content  a{
+			color:#000000;
+			text-decoration: none;
+		}
+		
+		#content  > li:nth-child(1){
+			border-radius:10px 10px 0px 0px;        				     
+		}
+		
+		#content  > li:nth-child(8){									     
+			border-radius:0px 0px 10px 10px; 
+		}
+		
+		#content > li:nth-child(2n+1){    								 
+			background-color: #de9093;
+		}
+		
+		#content  > li:first-child, 	#content  > li:last-child{
+			background-color: yellow;
+		}
+	</style>
+	</head>
+<body>
+	<div>
+		<ul id="content">
+			<li><a href="#">MENU1</a></li>
+			<li><a href="#">MENU2</a></li>
+			<li><a href="#">MENU3</a></li>
+			<li><a href="#">MENU4</a></li>
+			<li><a href="#">MENU5</a></li>
+			<li><a href="#">MENU6</a></li>
+			<li><a href="#">MENU7</a></li>
+			<li><a href="#">MENU8</a></li>
+		</ul>
+	</div>
+</body>
+</html>

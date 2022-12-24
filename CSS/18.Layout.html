@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>레이아웃 - 웹포트</title>
+	<!-- https://www.google.com/fonts/  -->
+
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+	<style type="text/css">	
+		#con{ width: 90%; margin: 0px auto; border:0px solid red;}
+		
+		header { width:95%; margin:5px auto; border:2px solid black; overflow:hidden; }
+		
+		#gnb ul, #lnb ul{ border:0px dotted red; overflow:hidden; }
+			
+		header li{  
+			list-style:none; border:2px dotted black; width: 70px; height: 50px; 
+			text-align: center; line-height: 50px;
+		}
+		
+		header a{ 
+			text-decoration:none; 
+		}
+	
+		#gnb li{ 
+			float:left; font-family:'Lobster';
+		}
+		
+		#lnb li{ 
+			float:right; font-family:'Indie Flower'; 
+		}
+		
+		#content { width:95%; margin:5px auto; border:2px solid black; overflow:hidden;}
+		
+		#section {
+			width:70%; height:1000px; border:1px solid black; float:left; margin:0px auto;
+			font-family:'Poiret One'; font-weight:bold; font-size:1.2em; 
+		}
+	
+		#aside {
+		width:29%; height:1000px; border:1px solid black; float:left; margin:0px auto;
+		font-family:'Indie Flower'; font-weight:bold; font-size:1.2em;  position: relative; left: 5px;
+		}
+		
+		footer { width:95%; height:100px;  border:2px solid black; margin:5px auto; text-align:center; line-height:100px; font-family:'Lobster'; } 
+ 	</style>
+</head>
+
+<body>
+	<div id="con">
+	 	<header>
+	        <div id="gnb">
+	            <ul>
+	                <li><a href="#none">gnb01</a></li>
+	                <li><a href="#none">gnb02</a></li>
+	                <li><a href="#none">gnb03</a></li>
+	                <li><a href="#none">gnb04</a></li>
+	                <li><a href="#none">gnb05</a></li>
+	            </ul>
+	        </div>
+	        <div id="lnb">
+	            <ul>
+	                <li><a href="#none">lnb01</a></li>
+	                <li><a href="#none">lnb02</a></li>
+	                <li><a href="#none">lnb03</a></li>
+	                <li><a href="#none">lnb04</a></li>
+	                <li><a href="#none">lnb05</a></li>
+	            </ul>
+	        </div>
+	    </header>
+	    
+	    <div id="content">
+	        <div id="section"> It is a professional display space in which exhibitions under diverse subjects including the cultural contents are held. Such exhibitions include the ARTTOON ART, Exhibition for 100 Modern Cartoonists of Korea, and SF Mania Exhibition. </div>
+	        <div id="aside"> It is equipped with a stop-motion animation experience space and experience display room in which it is possible to create an animation video clip of one’s own by creating a character in clay and taking photos with a camera. </div>
+	    </div>
+	    
+	    <footer>office information</footer>
+    </div>
+</body>
+</html>

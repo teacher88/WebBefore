@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 페이지 이동 </title>
+</head>
+<body>
+    <h3>외부 사이트 또는 내부 페이지 이동</h3>
+    <ol>
+		<li>
+            <a href="http://www.naver.com" target="_self"> 네이버 이동 </a>     
+        </li>   
+		<li>
+            <a href="http://www.google.co.kr" target="_blank"> 구글 이동 </a>   
+        </li> 
+		<li>
+            <a href="http://127.0.0.1:5500/HTML/01.Font.html" target="_blank"> 01.Start.html 이동</a>  
+       </li> 
+    </ol>
+    <br/><br/>
+
+    <h3>동일 페이지 이동 (책갈피)</h3>
+    <div id="back"><a href="#back">되돌아가기</a>
+        <a href="#apple">apple</a>
+        <a href="#banana">banana</a>
+        <a href="#melon">melon</a>
+    </div>
+
+    <div id="apple" style="margin-top: 800px;">첫번째 - apple</div>
+    <a href="#back">되돌아가기</a>
+
+    <div id="banana" style="margin-top: 1000px;">두번째 - banana</div>
+    <a href="#back">되돌아가기</a>
+
+    <div id="melon" style="margin-top: 1500px;">세번째 - melon</div>
+    <a href="#back">되돌아가기</a>
+    <br/><br/>
+
+
+    <h3> DIV, SAPN 사용하는 이유 (추후 Layout) </h3>
+	<div>BLOCK</div>        
+	<div>BLOCK</div>
+	<div>BLOCK</div>
+	<div>BLOCK</div>
+	<div>BLOCK</div>
+
+	<span>INLINE</span>    
+	<span>INLINE</span>
+	<span>INLINE</span>
+	<span>INLINE</span>
+</body>
+</html>

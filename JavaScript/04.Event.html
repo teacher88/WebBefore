@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+    <script>
+        function disp(){							
+		    alert("Why?");	 
+	    }
+
+        function sub(){
+		    window.alert("더블 클릭인데 Why?");
+	    }
+
+        function aa(){
+		var value=window.prompt("원하시는 숫자를 넣으세요.", "정수형 1~10까지 수만 입력하세요.");    //  prompt를 Overriding함. (요즘 사용안함)
+		    window.alert(value);		   																			
+	    }
+	
+        function bb(){
+            var result=window.confirm("정말로 삭제 하시겠습니까?");   				
+            if(result==true){
+                window.alert("참일 때");
+            }else{
+                window.alert("거짓일 때");
+            }
+        }
+
+        function bigText(obj){
+            obj.style.color="blue";
+            obj.style.fontSize="20px";
+            obj.style.fontFamily="맑은고딕";
+        }
+	
+        function normalText(obj){
+            obj.style.color="red";
+            obj.style.fontSize="12px";
+            obj.style.fontFamily="맑은고딕";
+        }
+    </script>
+</head>
+<body>
+    <!-- 마우스 이벤트 : click, dblclick, mousedown, mouseup, mouseover, mouseout -->
+
+    <h3>On Click</h3>
+    <input type="button" value="확인1" onclick="disp()"/>
+
+	<a href="#" style="text-decoration: none">
+		<span onclick="disp()">마우스를 클릭하세요.</span>
+	</a>
+    <br/><br/>
+
+    
+    <input type="button" value="확인2" onmousedown="disp()"/>
+	<input type="button" value="확인3" onmouseup="disp()"/>
+	<input type="button" value="확인4" ondblclick="sub()"/>
+	<br/><br/>
+
+
+    <input type="button" value="확인5" onclick="aa()"/>
+	<input type="button" value="확인6" onclick="bb()"/>
+	<br/><br/>
+
+    <a href="#" style="text-decoration:none;" onmouseover="bigText(this)"  onmouseout="normalText(this)">
+        안녕하세요.
+    </a>
+</body>
+</html>
