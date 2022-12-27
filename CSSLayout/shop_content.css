@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+#content{ 
+	width: 1000px; margin: 5px auto;
+	overflow: hidden;
+}
+/* 5번 content .section1 ------------------------------------------ */
+#content > .section1 {
+     width:1000px; margin:0 auto; overflow:hidden;
+     border:0px solid #cccccc; 
+}
+
+#content .slide_banner, #content .side_banner{
+    height:400px; float:left; 
+    line-height:400px;  text-align:center;
+    border:1px solid #cccccc;
+}
+
+#content .slide_banner { width:700px; margin-right: 3px;}
+#content .side_banner { width:288px; }
+
+/* 5번 content .section2 ------------------------------------------ */
+#content >.section2 > .hit_product,  #content >.section2 >.md_product{
+    width:1000px; overflow:hidden; margin-top:5px;
+    border:0px solid #cccccc;
+    box-sizing:border-box;
+}
+
+#content .hit_product li, #content .md_product li{
+	width:245px; height:400px; float:left;
+    margin-right:5px; border:1px solid #cccccc;
+    line-height:400px; text-align:center;
+    box-sizing:border-box;
+}
+
+#content >.section2  a{
+    color:#282828; font-size:1.1em;
+}
+
